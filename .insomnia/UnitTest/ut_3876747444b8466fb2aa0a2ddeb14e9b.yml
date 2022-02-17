@@ -1,0 +1,13 @@
+_id: ut_3876747444b8466fb2aa0a2ddeb14e9b
+type: UnitTest
+parentId: uts_986682d71eb74506bcb5259ba099557f
+modified: 1645107958023
+created: 1645102556861
+requestId: req_4e26c434d5794b238ecf20fa00d96f42
+name: Test input 10
+code: |-
+  const response = await insomnia.send();
+  const body = JSON.parse(response.data);
+
+  expect(response.status).to.equal(200);
+  expect(body.output).to.equal("buzz");

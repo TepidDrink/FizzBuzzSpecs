@@ -1,0 +1,14 @@
+_id: ut_825381b55d4144d796704efcb4abd2bd
+type: UnitTest
+parentId: uts_986682d71eb74506bcb5259ba099557f
+modified: 1645107693192
+created: 1645107035813
+requestId: req_d8a776a64aef479299b36a12c8f70223
+name: Test invalid input
+code: |
+  const response = await insomnia.send();
+  const body = JSON.parse(response.data);
+
+  expect(response.status).to.equal(400);
+  expect(body.status).to.equal(400);
+  expect(body.message).to.equal("Bad Request");

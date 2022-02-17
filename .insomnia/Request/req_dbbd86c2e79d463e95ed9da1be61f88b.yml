@@ -1,0 +1,29 @@
+_id: req_dbbd86c2e79d463e95ed9da1be61f88b
+type: Request
+parentId: fld_e7df5918bd1a485e987973994efa9a56
+modified: 1645107573989
+created: 1645102469017
+url: "{{ _.host }}/fizzbuzz"
+name: Calculation for input 15
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "input": 15
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2c42f198d09c4da8b919a5395beb8d2c
+authentication: {}
+metaSortKey: -1645084970176.5857
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

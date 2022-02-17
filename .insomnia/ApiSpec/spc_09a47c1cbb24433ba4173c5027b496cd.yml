@@ -1,0 +1,64 @@
+_id: spc_09a47c1cbb24433ba4173c5027b496cd
+type: ApiSpec
+parentId: wrk_698f8f5c2e8e4a44bf362ea4a905850c
+modified: 1645108045283
+created: 1644871808369
+fileName: FizzBuzzSpecs.yaml
+contents: >-
+  openapi: 3.0.0
+
+  info:
+    description: "This swagger documentation is for a simple FizzBuzz microservice. You can find out more about Swagger at [http://swagger.io](http://swagger.io)"
+    version: 1.0.2
+    title: Swagger FizzBuzz
+  paths:
+    /fizzbuzz:
+      post:
+        summary: Post request for fizzbuzz calculation
+        description: Main endpoint for fizzbuzz calculation
+        operationId: calculateFizzBuzz
+        requestBody:
+          $ref: "#/components/requestBodies/NumberRequest"
+        responses:
+          "200":
+            description: successful operation
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/FizzBuzzResponse"
+          "400":
+            description: Bad Request
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/ErrorResponse"
+  components:
+    requestBodies:
+      NumberRequest:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NumberRequest"
+        description: Request for input number for fizzbuzz calculation
+        required: true
+    schemas:
+      NumberRequest:
+        type: object
+        required:
+          - input
+        properties:
+          input:
+            type: integer
+      FizzBuzzResponse:
+        type: object
+        properties:
+          output:
+            type: string
+      ErrorResponse:
+        type: object
+        properties:
+          status:
+            type: integer
+          message:
+            type: string
+contentType: yaml

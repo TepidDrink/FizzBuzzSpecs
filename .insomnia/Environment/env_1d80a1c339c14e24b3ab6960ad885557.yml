@@ -1,0 +1,18 @@
+_id: env_1d80a1c339c14e24b3ab6960ad885557
+type: Environment
+parentId: env_8af4710b41fc5eedb1bde95cac5a9046af168fbf
+modified: 1645102111026
+created: 1645102091539
+name: localhost 8888
+data:
+  scheme: http
+  base_path: ""
+  host: localhost:8888
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+color: null
+isPrivate: false
+metaSortKey: 1645102091539
