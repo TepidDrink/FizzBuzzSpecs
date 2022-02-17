@@ -1,10 +1,10 @@
-_id: ut_f07cc97829b34e45bc052c030063267c
+_id: ut_1ffd7b5d9fbf468ca75b13f5bfbc8274
 type: UnitTest
 parentId: uts_986682d71eb74506bcb5259ba099557f
-modified: 1645109091661
-created: 1645107684763
-requestId: req_d1bc7e453b944611ad460c13dc93631a
-name: Test old endpoint
+modified: 1645109110061
+created: 1645109103628
+requestId: req_f32f9669fd1147609c58c16c43ebc775
+name: Test wrong endpoint and http method
 code: |-
   const response = await insomnia.send();
   const body = JSON.parse(response.data);

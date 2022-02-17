@@ -1,25 +1,25 @@
-_id: req_d1bc7e453b944611ad460c13dc93631a
+_id: req_wrk_698f8f5c2e8e4a44bf362ea4a905850c248a24f3
 type: Request
-parentId: fld_e7df5918bd1a485e987973994efa9a56
-modified: 1645108950219
-created: 1645107607318
-url: "{{ _.host }}/fizzbang"
-name: Calculation for old endpoint
+parentId: wrk_698f8f5c2e8e4a44bf362ea4a905850c
+modified: 1645108572551
+created: 1645108545614
+url: "{{ base_url }}/fizzbuzz"
+name: Post request for fizzbuzz calculation
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"input": 0
+      "input": 0
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_2c42f198d09c4da8b919a5395beb8d2c
+    id: pair_1e3b120c3e8549afa06b6a20834310b8
 authentication: {}
-metaSortKey: -1645084731061.7744
+metaSortKey: -1645108545614
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

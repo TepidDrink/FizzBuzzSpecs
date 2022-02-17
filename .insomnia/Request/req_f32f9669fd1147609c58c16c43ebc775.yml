@@ -1,12 +1,12 @@
-_id: req_d1bc7e453b944611ad460c13dc93631a
+_id: req_f32f9669fd1147609c58c16c43ebc775
 type: Request
 parentId: fld_e7df5918bd1a485e987973994efa9a56
-modified: 1645108950219
-created: 1645107607318
+modified: 1645109063109
+created: 1645109059836
 url: "{{ _.host }}/fizzbang"
-name: Calculation for old endpoint
+name: Calculation for wrong endpoint and http method
 description: ""
-method: POST
+method: OPTIONS
 body:
   mimeType: application/json
   text: |-
@@ -19,7 +19,7 @@ headers:
     value: application/json
     id: pair_2c42f198d09c4da8b919a5395beb8d2c
 authentication: {}
-metaSortKey: -1645084731061.7744
+metaSortKey: -1645084713982.145
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
