@@ -1,11 +1,11 @@
-_id: ut_825381b55d4144d796704efcb4abd2bd
+_id: ut_9be55dc1ce5a4cc7ba2ebc13fe16001f
 type: UnitTest
 parentId: uts_986682d71eb74506bcb5259ba099557f
-modified: 1645119840522
-created: 1645107035813
-requestId: req_d8a776a64aef479299b36a12c8f70223
-name: Test invalid input
-code: |
+modified: 1645119854291
+created: 1645119834403
+requestId: req_e6c682cb95444883b08133124a6e6e0f
+name: Test empty input
+code: |-
   const response = await insomnia.send();
   const body = JSON.parse(response.data);
 

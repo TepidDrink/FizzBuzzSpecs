@@ -1,25 +1,22 @@
-_id: req_f32f9669fd1147609c58c16c43ebc775
+_id: req_e6c682cb95444883b08133124a6e6e0f
 type: Request
 parentId: fld_e7df5918bd1a485e987973994efa9a56
-modified: 1645119321650
-created: 1645109059836
-url: "{{ _.host }}/fizzbang"
-name: Calculation for wrong endpoint and http method
+modified: 1645119817583
+created: 1645119332710
+url: "{{ _.host }}/fizzbuzz"
+name: Calculation for  empty input
 description: ""
-method: OPTIONS
+method: POST
 body:
   mimeType: application/json
-  text: |-
-    {
-    	"input": 0
-    }
+  text: "{}"
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_2c42f198d09c4da8b919a5395beb8d2c
 authentication: {}
-metaSortKey: -1645084713982.145
+metaSortKey: -1645084748141.4038
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
